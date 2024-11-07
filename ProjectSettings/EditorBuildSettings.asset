@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ordenador.unity
     guid: a4521522eb455c64fbebc25a4a68a037
+  - enabled: 1
+    path: Assets/Scenes/Entrevista.unity
+    guid: 98fc1c496f104ec4d9d1509db89dbe7d
   m_configObjects: {}
