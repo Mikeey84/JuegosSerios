@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "id": "welcome",
+      "text": "Bienvenido al juego"
+    },
+    {
+      "id": "level_complete",
+      "text": "¡Nivel completado!"
+    },
+    {
+      "id": "game_over",
+      "text": "Fin del juego"
+    }
+  ]
+}
