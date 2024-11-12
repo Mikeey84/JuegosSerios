@@ -6,13 +6,18 @@ public class Lifeguard : MonoBehaviour
     private NavMeshAgent agent;
     private Camera mainCamera;
 
+    private bool tieneBotiquin;
+
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        mainCamera = Camera.main;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        mainCamera = Camera.main;
+
+        tieneBotiquin = false;
     }
 
     // Update is called once per frame
