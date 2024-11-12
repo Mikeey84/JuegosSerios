@@ -2,15 +2,19 @@
   "messages": [
     {
       "id": "welcome",
-      "text": "Bienvenido al juego"
+      "texts": ["Bienvenido al juego"]
     },
     {
       "id": "level_complete",
-      "text": "¡Nivel completado!"
+      "texts": [ "Nivel completado!" ]
     },
     {
       "id": "game_over",
-      "text": "Fin del juego"
+      "texts": [ "Fin del juego" ]
+    },
+    {
+      "id": "Entrevistador",
+      "texts": [ "Parte1 del mensaje", "Parte2 del mensaje", "Parte3 del mensaje"]
     }
   ]
 }

@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System.Numerics;
+using UnityEngine.Networking.PlayerConnection;
 
 [System.Serializable]
 public class Message
 {
     public string id;
-    public string text;
+    //public string text;
+    //public string text2;
+    public string[] texts;
 }
 
 [System.Serializable]
@@ -29,7 +33,7 @@ public class LeerDatos : MonoBehaviour
         {
             // Deserializar el JSON en un objeto MessageData
             messageData = JsonUtility.FromJson<MessageData>(jsonTextFile.text);
-            MostrarMensajes();
+           // string[] aux = MostrarMensajes("Entrevistador");
         }
         else
         {
@@ -38,18 +42,26 @@ public class LeerDatos : MonoBehaviour
     }
 
     // Método para mostrar los mensajes en la consola
-    private void MostrarMensajes()
+    private string[] MostrarMensajes(string id)
     {
+        string[] aux = null;
         if (messageData != null && messageData.messages != null)
         {
             foreach (Message message in messageData.messages)
             {
-                Debug.Log($"ID: {message.id} - Texto: {message.text}");
+                if(message.id == id)
+                {
+                    return message.texts;
+                }
             }
         }
         else
         {
             Debug.Log("No hay mensajes para mostrar.");
         }
+        return null;
+
     }
+
+
 }
