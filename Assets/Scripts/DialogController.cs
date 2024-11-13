@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogController : MonoBehaviour
 {
     [SerializeField] Dialog dialog;
+    [SerializeField] string _messageID;
 
     LeerDatos LeerDatos;
     // metodo que se llama para crear el dialogo
@@ -12,7 +13,7 @@ public class DialogController : MonoBehaviour
     private void Start()
     {
         LeerDatos = GetComponent<LeerDatos>();
-        string[] aux = LeerDatos.MostrarMensajes("Entrevistador");
+        string[] aux = LeerDatos.MostrarMensajes(_messageID);
 
         foreach (string a in aux)
         {

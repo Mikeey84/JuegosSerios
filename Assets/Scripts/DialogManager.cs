@@ -35,13 +35,12 @@ public class DialogManager : MonoBehaviour
     {
         _typing = true;
         _dialogText.text = "";
-        foreach(var l in line.ToCharArray())
+        int aux = _letPerScnd;
+        foreach (var l in line.ToCharArray())
         {
             _dialogText.text += l;
             yield return new WaitForSeconds(1f / _letPerScnd);
         }
-
-
         _typing = false;
     }
 
