@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 1897373106}
     - target: {fileID: 5937205679219687819, guid: fa1d871a27587ad4e9010ed2d28e849f, type: 3}
       propertyPath: _letPerScnd
-      value: 60
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6385788496970093333, guid: fa1d871a27587ad4e9010ed2d28e849f, type: 3}
       propertyPath: m_Name
