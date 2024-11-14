@@ -18,6 +18,7 @@ public class SManager : MonoBehaviour
     }
     public void changeScene(string name)
     {
+        Debug.Log(name);
         SceneManager.LoadScene(name);
     }
 }

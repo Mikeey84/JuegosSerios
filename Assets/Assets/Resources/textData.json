@@ -2,7 +2,7 @@
   "messages": [
     {
       "id": "welcome",
-      "texts": ["Bienvenido al juego"]
+      "texts": [ "Bienvenido al juego" ]
     },
     {
       "id": "level_complete",
@@ -13,8 +13,29 @@
       "texts": [ "Fin del juego" ]
     },
     {
-      "id": "Entrevistador",
-      "texts": [ "Parte1 del mensaje", "Parte2 del mensaje", "Parte3 del mensaje"]
+      "id": "Entrevista",
+      "texts": [
+        "Entrevistador: Hola buenas, soy Javier y soy el jefe de la empresa.",
+        "Entrevistador: Por lo que he podido ver en tu currículum, tienes el curso de socorrista. ¿Es así?",
+        "Yo: Buenos días, Javier. Sí, completé el curso de socorrista el año pasado.",
+        "Yo: Exactamente, obtuve la certificación oficial y además tengo experiencia en primeros auxilios.",
+        "Entrevistador: Perfecto, me alegra escuchar que cuentas con la formación adecuada.",
+        "Yo: Gracias, estoy listo para aplicar mis conocimientos y ayudar en lo que sea necesario.",
+        "Entrevistador: Durante el trabajo dispondrás de 2 libros que te ayudarán a la hora de realizar el trabajo.",
+        "Entrevistador: El primero te ayudará con el mantenimiento de la piscina.",
+        "Entrevistador: Y el segundo te enseñará cómo socorrer a las personas.",
+        "Entrevistador: El único inconveniente es que solo podrás mirarlos una vez al día, por lo que tendrás que saberte la teoría de memoria.",
+        "Entrevistador: ¿Está claro todo hasta el momento?.",
+        "Yo: Por supuesto, Javier."
+      ]
+    },
+    {
+      "id": "Curriculum",
+      "texts": [
+        "Otro día más buscando trabajo como socorrista...",
+        "Mi madre me dijo que tengo que encontrar trabajo ya, así que probaré esta empresa.",
+        "Además tengo que quitar este fondo de escritorio... Hace ya mucho que me hice esa foto."
+      ]
     }
   ]
 }
