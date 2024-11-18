@@ -6,12 +6,18 @@ public class Lifeguard : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Camera mainCamera;
-    private bool tieneBotiquin;
-    private bool drch=true;
-    private double dest = 0.0;
+
     private Transform transform;
     private SpriteRenderer sprite;
+
+    private bool tieneBotiquin;
+
+    private double dest = 0.0;
+
+
     [SerializeField] private Animator animator;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,23 +48,21 @@ public class Lifeguard : MonoBehaviour
             {
                 animator.SetBool("Moving", true);
                 agent.SetDestination(hit.point);
+                //dest = agent.GetDestination(hit.point);
                 dest = hit.point.x;
-                Debug.Log(hit.point.x);
                 sprite.flipX = hit.point.x < transform.position.x;
+
             }
 
         }
         else
         {
-            Debug.Log(dest + " "+transform.position.x);
+            //Debug.Log(dest + " "+transform.position.x);
             if (transform.position.x == dest)
             {
                 animator.SetBool("Moving", false);
 
             }
         }
- 
-
-
     }
 }
