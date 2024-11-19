@@ -34,35 +34,39 @@ public class Lifeguard : MonoBehaviour
         tieneBotiquin = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    void CheckPosition()
     {
-        
-        // Detectar si el clic izquierdo del ratón es presionado
-        if (Input.GetMouseButtonDown(0))  // 0 corresponde al clic izquierdo
+        // Comprueba la distancia restante para detener la animación
+        if (agent.pathPending) return; // Espera a que se calcule la ruta
+
+        if (agent.remainingDistance <= agent.stoppingDistance && !agent.hasPath)
         {
-            RaycastHit hit;
-            Debug.Log(agent.speed);
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-            {
-                animator.SetBool("Moving", true);
-                agent.SetDestination(hit.point);
-                //dest = agent.GetDestination(hit.point);
-                dest = hit.point.x;
-                sprite.flipX = hit.point.x < transform.position.x;
-
-            }
-
+            animator.SetBool("Moving", false);
         }
         else
         {
-            //Debug.Log(dest + " "+transform.position.x);
-            if (transform.position.x == dest)
-            {
-                animator.SetBool("Moving", false);
+            animator.SetBool("Moving", true);
+        }
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
+        // Detectar si el clic izquierdo del ratón es presionado
+        if (Input.GetMouseButtonDown(0))  // 0 corresponde al clic izquierdo
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+
+            if (hit.collider != null) // Verifica si el raycast impactó algo
+            {
+                animator.SetBool("Moving", true);
+                agent.SetDestination(hit.point);
+                dest = hit.point.x;
+                sprite.flipX = hit.point.x < transform.position.x;
             }
         }
+
+        CheckPosition();
     }
 }

@@ -15,13 +15,18 @@ public class DialogManager : MonoBehaviour
     
     // Para activar el boton de la pantalla
     [SerializeField] GameObject _button;
-
+    private GameObject _skip;
 
     public static DialogManager Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+
     }
 
     public void ShowDialog(Dialog dialog)
@@ -50,22 +55,33 @@ public class DialogManager : MonoBehaviour
 
     private void Update()
     {
-        if(_dialogBox.activeSelf && !_typing && Input.GetKeyDown(KeyCode.Space))
+        if (_dialogBox.activeSelf)
         {
-            ++_currentLine;
-            if(_currentLine < _dialog.Lines.Count)
+            if (!_typing && Input.GetKeyDown(KeyCode.Space))
             {
-                StartCoroutine(Type(_dialog.Lines[_currentLine]));
-            }
-            else
-            {
-                _currentLine = 0;
-                _dialogBox.SetActive(false);
-
-                if (_button != null)
+                ++_currentLine;
+                if (_currentLine < _dialog.Lines.Count)
                 {
-                    _button.SetActive(true);
+                    StartCoroutine(Type(_dialog.Lines[_currentLine]));
                 }
+                else
+                {
+                    _currentLine = 0;
+                    _dialogBox.SetActive(false);
+
+                    if (_button != null)
+                    {
+                        _button.SetActive(true);
+                    }
+                }
+            }
+            // Si el texto está siendo escrito y se presiona espacio, saltar al final
+            else if (_typing && Input.GetKeyDown(KeyCode.Space))
+            {
+                StopAllCoroutines();  // Detener cualquier corrutina que esté escribiendo el texto
+                _dialogText.text = _dialog.Lines[_currentLine];  // Mostrar el texto completo
+                _typing = false;
+
             }
         }
     }
