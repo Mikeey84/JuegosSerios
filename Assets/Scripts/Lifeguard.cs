@@ -7,31 +7,19 @@ public class Lifeguard : MonoBehaviour
     private NavMeshAgent agent;
     private Camera mainCamera;
 
-    private Transform transform;
     private SpriteRenderer sprite;
-
-    private bool tieneBotiquin;
-
-    private double dest = 0.0;
-
-
-    [SerializeField] private Animator animator;
-
-
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        transform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
         mainCamera = Camera.main;
-
-        tieneBotiquin = false;
     }
 
     void CheckPosition()
@@ -62,7 +50,6 @@ public class Lifeguard : MonoBehaviour
             {
                 animator.SetBool("Moving", true);
                 agent.SetDestination(hit.point);
-                dest = hit.point.x;
                 sprite.flipX = hit.point.x < transform.position.x;
             }
         }
