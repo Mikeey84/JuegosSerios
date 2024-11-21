@@ -54,6 +54,16 @@ public class Lifeguard : MonoBehaviour
             }
         }
 
+        //if (Input.GetKeyDown(KeyCode.X))
+        //{
+        //    GameManager.GetInstance().UpdateBar("Vecinos", -0.2f);
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.V))
+        //{
+        //    GameManager.GetInstance().UpdateBar("Vecinos", 0.1f);
+        //}
+
         CheckPosition();
     }
 }
