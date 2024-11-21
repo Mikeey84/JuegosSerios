@@ -5,8 +5,8 @@ using UnityEngine;
 public class DialogController : MonoBehaviour
 {
     [SerializeField] Dialog dialog;
+    [SerializeField] bool startConversation;
     [SerializeField] string _messageID;
-
     LeerDatos LeerDatos;
     // metodo que se llama para crear el dialogo
 
@@ -19,6 +19,14 @@ public class DialogController : MonoBehaviour
         {
             dialog.Lines.Add(a);
         }
+        if (startConversation)
+        {
+            DialogManager.Instance.ShowDialog(dialog);
+        }
+    }
+
+    public void ShowDialog()
+    {
         DialogManager.Instance.ShowDialog(dialog);
     }
 }
