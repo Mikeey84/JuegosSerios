@@ -4,6 +4,11 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public enum GameStates
+    {
+        Game, PauseMenu, Manual
+    }
+
     private static GameManager instance; // instancia del GameManager
     
     [SerializeField] private GameObject uiPrefab; // prefab de la interfaz
@@ -12,8 +17,11 @@ public class GameManager : MonoBehaviour
     private Image vecinosBar; // barra de los vecinos
     private Image empresaBar; // barra de la empresa
 
+    private GameStates currentState;
+
     void Awake()
     {
+
         if (instance == null)
         {
             instance = this;
@@ -36,13 +44,24 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        currentState = GameStates.Game;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentState == GameStates.Game)
+        {
+            uiInstance.SetActive(true);
+            vecinosBar.enabled=true;
+            empresaBar.enabled = true;
+        }
+        else
+        {
+            uiInstance.SetActive(false);
+            vecinosBar.enabled = false;
+            empresaBar.enabled = false;
+        }
     }
 
     /// <summary>
@@ -67,6 +86,16 @@ public class GameManager : MonoBehaviour
                 Debug.LogWarning($"Barra {barName} no encontrada");
                 break;
         }
+    }
+
+    public void setState(GameStates state)
+    {
+        currentState = state;
+    }
+
+    public GameStates getState()
+    {
+        return currentState;
     }
 
     /// <summary>
