@@ -14,6 +14,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] bool _typing;
 
     GameManager _gM;
+    [SerializeField] GameManager.GameStates _postState;
 
     // Para activar el boton de la pantalla
     [SerializeField] GameObject _button;
@@ -29,6 +30,7 @@ public class DialogManager : MonoBehaviour
     private void Start()
     {
         _gM = GameManager.GetInstance();
+        
     }
 
     public void ShowDialog(Dialog dialog)
@@ -71,7 +73,7 @@ public class DialogManager : MonoBehaviour
                 {
                     _currentLine = 0;
                     _dialogBox.SetActive(false);
-                    _gM.setState(GameManager.GameStates.Game);
+                    _gM.setState(_postState);
                     if (_button != null)
                     {
                         _button.SetActive(true);

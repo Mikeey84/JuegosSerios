@@ -4,9 +4,10 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameStates _gameStates;
     public enum GameStates
     {
-        Game, PauseMenu, Manual
+        Game, PauseMenu, Manual, PH
     }
 
     private static GameManager instance; // instancia del GameManager
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentState = GameStates.Game;
+        currentState = _gameStates;
     }
 
     // Update is called once per frame
@@ -55,6 +56,12 @@ public class GameManager : MonoBehaviour
             uiInstance.SetActive(true);
             vecinosBar.enabled=true;
             empresaBar.enabled = true;
+        }
+        else if(currentState == GameStates.PH)
+        {
+            uiInstance.SetActive(false);
+            vecinosBar.enabled = false;
+            empresaBar.enabled = false;
         }
         else
         {
@@ -103,4 +110,5 @@ public class GameManager : MonoBehaviour
     /// </summary>
     /// <returns>GameManager de la escena</returns>
     public static GameManager GetInstance() { return instance; }
+
 }

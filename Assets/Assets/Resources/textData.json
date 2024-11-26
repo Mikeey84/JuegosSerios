@@ -44,6 +44,15 @@
         "Solo soy un NPC que habla.",
         "Pero nunca digo algo interesante..."
       ]
+    },
+    {
+      "id": "Tutorial_PH",
+      "texts": [
+        "Para comprobar el pH de la piscina tienes que hundir la tira medidora dentro del agua.",
+        "En función del color que salga en el cuadrado gris, tendrás que subir, bajar o dejar el pH de la piscina.",
+        "Una vez uses la tira, tendrás que responder con la respuesta correcta.",
+        "Al ser el primer día, puedes mirar el libro 'Mantenimiento de la piscina' para saber que decisión tomar."
+      ]
     }
   ]
 }
