@@ -53,6 +53,15 @@
         "Una vez uses la tira, tendrás que responder con la respuesta correcta.",
         "Al ser el primer día, puedes mirar el libro 'Mantenimiento de la piscina' para saber que decisión tomar."
       ]
+    },
+    {
+      "id": "Intro_dia_uno",
+      "texts": [
+        "Hoy es mi primer día trabajando como socorrista...",
+        "Según mi cuadrante debería medir el pH del agua y de esta manera saber si el agua está en buen estado.",
+        "Para mirar el pH haz click en la piscina."
+      ]
     }
+
   ]
 }

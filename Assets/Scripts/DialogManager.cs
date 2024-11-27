@@ -30,14 +30,14 @@ public class DialogManager : MonoBehaviour
     private void Start()
     {
         _gM = GameManager.GetInstance();
-        
     }
 
     public void ShowDialog(Dialog dialog)
     {
         this._dialog = dialog;
         _dialogBox.SetActive(true);
-        _gM.setState(GameManager.GameStates.Manual);
+        if(_gM != null)
+            _gM.setState(GameManager.GameStates.Manual);
         StartCoroutine(Type(dialog.Lines[0]));
     }
     public void disableDialog()

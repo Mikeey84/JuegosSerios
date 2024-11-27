@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -23,15 +24,17 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
 
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(this.gameObject);
+        //}
+        //else
+        //{
+        //    instance = this;
+        //}
+        if (instance == null) instance = this;
+        else Destroy(this);
 
         // Instancia la interfaz al iniciar el GameManager
         uiInstance = Instantiate(uiPrefab);
