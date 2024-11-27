@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class CloseBackGround : MonoBehaviour
 {
+    [SerializeField] GameManager.GameStates state;
     [SerializeField] GameObject manual;
     [SerializeField] GameObject boton;
+
+    [SerializeField] private GameObject uiPrefab;
+
     PolygonCollider2D collider;
     GameManager gm;
     // Start is called before the first frame update
@@ -29,8 +33,11 @@ public class CloseBackGround : MonoBehaviour
             if (hit.collider == collider) // Verifica si el raycast impactó algo
             {                
                 manual.SetActive(false);
+                uiPrefab.SetActive(true);
+
                 boton.SetActive(true);
-                gm.setState(GameManager.GameStates.Game);
+
+                gm.setState(state);
 
             }
         }

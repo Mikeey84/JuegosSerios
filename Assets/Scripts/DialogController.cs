@@ -25,6 +25,11 @@ public class DialogController : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+
+    }
+
     public void ShowDialog()
     {
         DialogManager.Instance.ShowDialog(dialog);

@@ -55,6 +55,18 @@
       ]
     },
     {
+      "id": "ErrorPH",
+      "texts": [
+        "No, el nivel del PH es el correcto."
+      ]
+    },
+    {
+      "id": "AciertoPH",
+      "texts": [
+        "Si, como has podido comprobar el nivel del PH es el correcto."
+      ]
+    },
+    {
       "id": "Intro_dia_uno",
       "texts": [
         "Hoy es mi primer día trabajando como socorrista...",

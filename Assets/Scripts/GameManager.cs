@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance; // instancia del GameManager
     
     [SerializeField] private GameObject uiPrefab; // prefab de la interfaz
+
     private GameObject uiInstance; // instancia de la interfaz
 
     private Image vecinosBar; // barra de los vecinos

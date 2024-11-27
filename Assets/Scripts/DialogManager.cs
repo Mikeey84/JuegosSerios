@@ -91,4 +91,9 @@ public class DialogManager : MonoBehaviour
         }
         
     }
+
+    public bool end()
+    {
+        return _dialogBox.activeSelf;
+    }
 }

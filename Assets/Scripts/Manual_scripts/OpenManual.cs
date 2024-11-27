@@ -5,6 +5,8 @@ using UnityEngine;
 public class OpenManual : MonoBehaviour
 {
     [SerializeField] GameObject manual;
+    [SerializeField] private GameObject uiPrefab;
+
     GameManager gm;
 
     // Start is called before the first frame update
@@ -24,6 +26,7 @@ public class OpenManual : MonoBehaviour
         if (manual != null)
         {
             gm.setState(GameManager.GameStates.Manual);
+            uiPrefab.SetActive(false);
             manual.SetActive(true);
         }
     }

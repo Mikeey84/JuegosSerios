@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SManager : MonoBehaviour
 {
+    GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = GameManager.GetInstance();
+
     }
 
     // Update is called once per frame
@@ -18,7 +20,9 @@ public class SManager : MonoBehaviour
     }
     public void changeScene(string name)
     {
+
         Debug.Log(name);
+        gm.setState(GameManager.GameStates.PH);
         SceneManager.LoadScene(name);
     }
 }
