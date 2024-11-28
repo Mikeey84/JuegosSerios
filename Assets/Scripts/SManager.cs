@@ -22,7 +22,7 @@ public class SManager : MonoBehaviour
     {
 
         Debug.Log(name);
-        gm.setState(GameManager.GameStates.PH);
+        //gm.setState(GameManager.GameStates.PH);
         SceneManager.LoadScene(name);
     }
 }

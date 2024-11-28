@@ -57,7 +57,7 @@
     {
       "id": "ErrorPH",
       "texts": [
-        "No, el nivel del PH es el correcto."
+        "No, el nivel del PH no es el correcto."
       ]
     },
     {
@@ -70,7 +70,7 @@
     {
       "id": "AciertoPH",
       "texts": [
-        "Si, como has podido comprobar el nivel del PH es el correcto."
+        "Si, como has podido comprobar el nivel del PH no es el correcto."
       ]
     },
     {
