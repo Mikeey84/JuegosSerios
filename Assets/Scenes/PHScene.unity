@@ -3148,7 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97162f5ada5b957499d7439b804525d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respuesta: 1
+  Respuesta: 2
   dialog:
     _lines: []
   uiPrefab: {fileID: 1499515736}
