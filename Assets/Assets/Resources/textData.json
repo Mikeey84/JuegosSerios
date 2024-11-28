@@ -61,6 +61,13 @@
       ]
     },
     {
+      "id": "PostMantenimiento",
+      "texts": [
+        "Bueno, por hoy ya he terminado mis tareas de mantenimiento.",
+        "Parece que han bajado unos niños (curiosamente se parecen mucho a mi que raro) debo estar atento"
+      ]
+    },
+    {
       "id": "AciertoPH",
       "texts": [
         "Si, como has podido comprobar el nivel del PH es el correcto."
