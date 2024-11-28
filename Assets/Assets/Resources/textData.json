@@ -80,6 +80,25 @@
         "Según mi cuadrante debería medir el pH del agua y de esta manera saber si el agua está en buen estado.",
         "Para mirar el pH haz click en la piscina."
       ]
+    },
+    {
+      "id": "Entrada_al_agua",
+      "texts": [
+        "El niño se ha caido al agua y tengo que rescartarlo.",
+        "En un rescate acuático, ¿qué tipo de inmersión se recomienda para bucear con mayor seguridad y visibilidad?"
+      ]
+    },
+    {
+      "id": "Acierto",
+      "texts": [
+        "La inmersión en V es la mejor de todas."
+      ]
+    },
+    {
+      "id": "Fallo",
+      "texts": [
+        "No, esta manera no es la más óptima para tirarte a la piscina."
+      ]
     }
 
   ]
