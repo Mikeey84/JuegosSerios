@@ -2,23 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloseBackGround : MonoBehaviour
+public class AccidenteComponent : MonoBehaviour
 {
-    [SerializeField] GameManager.GameStates state;
-    [SerializeField] GameObject manual;
-    [SerializeField] GameObject boton;
+    public bool ac;
+    private CircleCollider2D collider;
 
-    [SerializeField] private GameObject uiPrefab;
+    [SerializeField] GameObject multiO;
 
-    PolygonCollider2D collider;
-    GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
-        gm = GameManager.GetInstance();
-        collider = GetComponent<PolygonCollider2D>();
+        collider = GetComponent<CircleCollider2D>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -31,16 +26,12 @@ public class CloseBackGround : MonoBehaviour
             //Debug.Log(collider);
 
             if (hit.collider == collider) // Verifica si el raycast impactó algo
-            {                
-                manual.SetActive(false);
-               if(uiPrefab!=null) uiPrefab.SetActive(true);
-
-                boton.SetActive(true);
-
-                gm.setState(state);
-
+            {
+                if (multiO != null)
+                {
+                    multiO.SetActive(true);
+                }
             }
         }
     }
-
 }

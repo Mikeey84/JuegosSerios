@@ -26,7 +26,7 @@ public class OpenManual : MonoBehaviour
         if (manual != null)
         {
             gm.setState(GameManager.GameStates.Manual);
-            uiPrefab.SetActive(false);
+            if(uiPrefab!=null)uiPrefab.SetActive(false);
             manual.SetActive(true);
         }
     }

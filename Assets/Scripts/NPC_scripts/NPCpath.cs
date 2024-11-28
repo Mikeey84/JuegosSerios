@@ -8,11 +8,15 @@ public class NPCpath : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator animator;
 
+    private AccidenteComponent ac;
 
-    private bool stop = false;
-    private bool next = false;
+    public bool stop = false;
+    public bool lesion;
     private int  i = 1;
+
     [SerializeField] private Vector3[] path;
+
+    [SerializeField] private int npaths;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +24,9 @@ public class NPCpath : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        animator.SetBool("Moving", true);
-        agent.SetDestination(path[0]);
-        sprite.flipX = path[i].x < transform.position.x;
+        ac = GetComponent<AccidenteComponent>();
+
+
     }
     void setDest()
     {
@@ -30,7 +34,7 @@ public class NPCpath : MonoBehaviour
         if (agent.pathPending)return;
         if (agent.remainingDistance <= agent.stoppingDistance )
         {
-            if (i < 5 - 1)
+            if (i < npaths - 1)
             {
                 i++;
                 agent.SetDestination(path[i]);
@@ -39,15 +43,31 @@ public class NPCpath : MonoBehaviour
             else
             {
                 animator.SetBool("Moving", false);
+                if (lesion)
+                {
+                    ac.enabled=true;
 
+                }
             }
 
         }
 
     }
+    public void move()
+    {
+        animator.SetBool("Moving", true);
+        agent.SetDestination(path[0]);
+        sprite.flipX = path[0].x < transform.position.x;
+        stop = true;
+    }
     // Update is called once per frame
     void Update()
     {
-        setDest();
+        if (stop)
+        {
+
+            setDest();
+
+        }
     }
 }

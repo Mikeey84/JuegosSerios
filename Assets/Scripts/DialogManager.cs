@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
     [SerializeField] GameObject _dialogBox;
+    [SerializeField] GameObject npcs;
     [SerializeField] Text _dialogText;
     [SerializeField] int _letPerScnd;
     [SerializeField] Dialog _dialog;
@@ -77,6 +78,14 @@ public class DialogManager : MonoBehaviour
                     if (_button != null)
                     {
                         _button.SetActive(true);
+                    }
+                    if (npcs != null)
+                    {
+                        int aux = npcs.transform.childCount;
+                        for (int i = 0; i < aux; i++)
+                        {
+                            npcs.transform.GetChild(i).GetComponent<NPCpath>().move();
+                        }
                     }
                 }
             }
