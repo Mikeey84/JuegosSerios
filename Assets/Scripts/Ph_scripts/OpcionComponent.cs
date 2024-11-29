@@ -7,7 +7,8 @@ public class OpcionComponent : MonoBehaviour
     public int Respuesta;
     LeerDatos LeerDatos;
     [SerializeField]  Dialog dialog;
-
+    [SerializeField] string _rightAnswerConversation;
+    [SerializeField] string _wrongAnswerConversation;
     [SerializeField] private GameObject uiPrefab;
     [SerializeField] private GameObject flecha;
     // Start is called before the first frame update
@@ -39,14 +40,14 @@ public class OpcionComponent : MonoBehaviour
     {
         if(opcion==Respuesta)
         {
-            uiPrefab.SetActive(false);
-            ShowMessage("AciertoPH");
+            if(uiPrefab!=null)uiPrefab.SetActive(false);
+            ShowMessage(_rightAnswerConversation);
         }
         else
         {
-            uiPrefab.SetActive(false);
+            if (uiPrefab != null) uiPrefab.SetActive(false);
 
-            ShowMessage("ErrorPH");
+            ShowMessage(_wrongAnswerConversation);
         }
     }
 

@@ -3968,6 +3968,18 @@ PrefabInstance:
       propertyPath: uiPrefab
       value: 
       objectReference: {fileID: 1499515736}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: Respuesta
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _rightAnswerConversation
+      value: AciertoPH
+      objectReference: {fileID: 0}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _wrongAnswerConversation
+      value: ErrorPH
+      objectReference: {fileID: 0}
     - target: {fileID: 587649262671091486, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: m_Name
       value: MultiOpcion
@@ -4020,6 +4032,14 @@ PrefabInstance:
       propertyPath: uiPrefab
       value: 
       objectReference: {fileID: 1499515736}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _rightAnswerConversation
+      value: AciertoPH
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _wrongAnswerConversation
+      value: ErrorPH
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

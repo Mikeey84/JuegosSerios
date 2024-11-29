@@ -399,9 +399,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97162f5ada5b957499d7439b804525d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respuesta: 3
+  Respuesta: 1
   dialog:
     _lines: []
+  _rightAnswerConversation: AciertoTirarse
+  _wrongAnswerConversation: FalloTirarse
   uiPrefab: {fileID: 0}
   flecha: {fileID: 0}
 --- !u!114 &119652392
@@ -2149,6 +2151,14 @@ PrefabInstance:
       propertyPath: Respuesta
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _rightAnswerConversation
+      value: AciertoTIrarse
+      objectReference: {fileID: 0}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _wrongAnswerConversation
+      value: FalloTirarse
+      objectReference: {fileID: 0}
     - target: {fileID: 587649262671091486, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: m_Name
       value: MultiOpcion
@@ -2212,6 +2222,18 @@ PrefabInstance:
     - target: {fileID: 4764001491889433730, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: Respuesta
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _rightAnswerConversation
+      value: AciertoTirarse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _wrongAnswerConversation
+      value: FalloTirarse
       objectReference: {fileID: 0}
     - target: {fileID: 7197914471227160498, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: m_AnchoredPosition.y
