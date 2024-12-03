@@ -45,6 +45,11 @@ public class NPCpath : MonoBehaviour
                 animator.SetBool("Moving", false);
                 if (lesion)
                 {
+                    if (transform.childCount > 0)
+                    {
+                        Debug.Log("a");
+                        transform.GetChild(0).gameObject.SetActive(true);
+                    }
                     ac.enabled=true;
 
                 }

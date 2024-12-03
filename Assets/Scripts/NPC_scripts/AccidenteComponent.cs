@@ -29,6 +29,7 @@ public class AccidenteComponent : MonoBehaviour
             {
                 if (multiO != null)
                 {
+
                     multiO.SetActive(true);
                 }
             }
