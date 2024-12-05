@@ -7,18 +7,33 @@ public class DialogController : MonoBehaviour
     [SerializeField] Dialog dialog;
     [SerializeField] bool startConversation;
     [SerializeField] string _messageID;
+    [SerializeField] private string _correctConversation;
+    [SerializeField] private string _wrongConversation;
     LeerDatos LeerDatos;
     // metodo que se llama para crear el dialogo
 
     private void Start()
     {
         LeerDatos = GetComponent<LeerDatos>();
+
+        int selectedAnswer = GameManager.GetInstance().GetSelectedAnswer();
+        string messageID;
+
+        if (selectedAnswer != -1)
+        {
+            if (selectedAnswer == 1) messageID = _correctConversation; // gestionar bien qué toca
+            else messageID = _wrongConversation;
+            GameManager.GetInstance().SetSelectedAnswer(-1);
+            _messageID = messageID;
+        }
+
         string[] aux = LeerDatos.MostrarMensajes(_messageID);
 
         foreach (string a in aux)
         {
             dialog.Lines.Add(a);
         }
+
         if (startConversation)
         {
             DialogManager.Instance.ShowDialog(dialog);
