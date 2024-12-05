@@ -7,6 +7,8 @@ public class DialogController : MonoBehaviour
     [SerializeField] Dialog dialog;
     [SerializeField] bool startConversation;
     [SerializeField] string _messageID;
+    [SerializeField] private string _correctConversation;
+    [SerializeField] private string _wrongConversation;
     LeerDatos LeerDatos;
     // metodo que se llama para crear el dialogo
 
@@ -19,8 +21,8 @@ public class DialogController : MonoBehaviour
 
         if (selectedAnswer != -1)
         {
-            if (selectedAnswer == 1) messageID = "AciertoPH"; // gestionar bien qué toca
-            else messageID = "ErrorPH";
+            if (selectedAnswer == 1) messageID = _correctConversation; // gestionar bien qué toca
+            else messageID = _wrongConversation;
             GameManager.GetInstance().SetSelectedAnswer(-1);
             _messageID = messageID;
         }

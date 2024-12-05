@@ -38,17 +38,20 @@ public class OpcionComponent : MonoBehaviour
 
     public void solucion(int opcion)
     {
-        GameManager.GetInstance().SetSelectedAnswer(opcion);  // Guarda la respuesta seleccionada
+        
 
         if (opcion == Respuesta)
         {
             if (uiPrefab != null) uiPrefab.SetActive(false);
             ShowMessage(_rightAnswerConversation);
+            GameManager.GetInstance().SetSelectedAnswer(1);  // Guarda la respuesta seleccionada
         }
         else
         {
             if (uiPrefab != null) uiPrefab.SetActive(false);
             ShowMessage(_wrongAnswerConversation);
+            GameManager.GetInstance().SetSelectedAnswer(0);  // Guarda la respuesta seleccionada
+
         }
     }
 
