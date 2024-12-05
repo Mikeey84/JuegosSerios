@@ -32,7 +32,7 @@ public class OpcionComponent : MonoBehaviour
             dialog.Lines.Add(a);
         }
         DialogManager.Instance.ShowDialog(dialog);
-        flecha.SetActive(true);
+        if(flecha!=null)flecha.SetActive(true);
 
     }
 

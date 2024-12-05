@@ -11,6 +11,7 @@ public class NPCpath : MonoBehaviour
     private AccidenteComponent ac;
 
     public bool stop = false;
+    public bool j = false;
     public bool lesion;
     private int  i = 1;
 
@@ -45,10 +46,16 @@ public class NPCpath : MonoBehaviour
                 animator.SetBool("Moving", false);
                 if (lesion)
                 {
+                    agent.enabled = false;
+                    
                     if (transform.childCount > 0)
                     {
                         Debug.Log("a");
+                        animator.SetBool("Jump", true);
                         transform.GetChild(0).gameObject.SetActive(true);
+                        stop = false;
+                        sprite.flipX = 0 < transform.position.x;
+                        j = true;
                     }
                     ac.enabled=true;
 
@@ -73,6 +80,11 @@ public class NPCpath : MonoBehaviour
 
             setDest();
 
+        }
+        if (j)
+        {
+
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(0.50f, 0.0f), 2 * Time.deltaTime);
         }
     }
 }
