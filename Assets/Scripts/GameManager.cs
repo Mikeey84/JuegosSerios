@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameStates _gameStates;
     public enum GameStates
     {
-        Game, PauseMenu, Manual, PH
+        Game, PauseMenu, Manual, PH, Cleaning
     }
 
     private static GameManager instance; // instancia del GameManager
@@ -30,22 +29,18 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);  // Asegúrate de no destruir todo el GameObject
+            
+            // Instancia la interfaz al iniciar el GameManager
+            uiInstance = Instantiate(uiPrefab);
+            DontDestroyOnLoad(uiInstance);
+
+            // Encuentra las barras dentro del prefab
+            vecinosBar = uiInstance.transform.Find("Vecinos/Barra").GetComponent<Image>();
+            empresaBar = uiInstance.transform.Find("Empresa/Barra").GetComponent<Image>();
+
+            _selectedAnswer = -1;
         }
-        else
-        {
-            Destroy(gameObject);  // Destruir el GameObject completo, no solo el script
-            return;  // Salir del método para evitar más inicialización
-        }
-
-        // Instancia la interfaz al iniciar el GameManager
-        uiInstance = Instantiate(uiPrefab);
-        DontDestroyOnLoad(uiInstance);
-
-        // Encuentra las barras dentro del prefab
-        vecinosBar = uiInstance.transform.Find("Vecinos/Barra").GetComponent<Image>();
-        empresaBar = uiInstance.transform.Find("Empresa/Barra").GetComponent<Image>();
-
-        _selectedAnswer = -1;
+        else Destroy(gameObject);  // Destruir el GameObject completo, no solo el script
     }
 
 

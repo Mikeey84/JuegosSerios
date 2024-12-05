@@ -99,6 +99,14 @@
       "texts": [
         "No, esta manera no es la más óptima para tirarte a la piscina."
       ]
+    },
+    {
+      "id": "TutorialLimpieza",
+      "texts": [
+        "En estos momentos la piscina no se encuentra en las condiciones más óptimas para su uso...",
+        "Lo mejor será empezar a limpiar el fondo de la piscina primero.",
+        "Coge la aspiradora que tienes a la derecha de tu pantalla y ve pasándola mientras mantienes el click izquierdo por el fondo."
+      ]
     }
 
   ]
