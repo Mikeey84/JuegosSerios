@@ -13,12 +13,25 @@ public class DialogController : MonoBehaviour
     private void Start()
     {
         LeerDatos = GetComponent<LeerDatos>();
+
+        int selectedAnswer = GameManager.GetInstance().GetSelectedAnswer();
+        string messageID;
+
+        if (selectedAnswer != -1)
+        {
+            if (selectedAnswer == 1) messageID = "AciertoPH"; // gestionar bien qué toca
+            else messageID = "ErrorPH";
+            GameManager.GetInstance().SetSelectedAnswer(-1);
+            _messageID = messageID;
+        }
+
         string[] aux = LeerDatos.MostrarMensajes(_messageID);
 
         foreach (string a in aux)
         {
             dialog.Lines.Add(a);
         }
+
         if (startConversation)
         {
             DialogManager.Instance.ShowDialog(dialog);

@@ -22,29 +22,32 @@ public class GameManager : MonoBehaviour
 
     private GameStates currentState;
 
+    private int _selectedAnswer;
+
     void Awake()
     {
-
-        //if (instance == null)
-        //{
-        //    instance = this;
-        //    DontDestroyOnLoad(this.gameObject);
-        //}
-        //else
-        //{
-        //    instance = this;
-        //}
-        if (instance == null) instance = this;
-        else Destroy(this);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);  // Asegúrate de no destruir todo el GameObject
+        }
+        else
+        {
+            Destroy(gameObject);  // Destruir el GameObject completo, no solo el script
+            return;  // Salir del método para evitar más inicialización
+        }
 
         // Instancia la interfaz al iniciar el GameManager
         uiInstance = Instantiate(uiPrefab);
         DontDestroyOnLoad(uiInstance);
-        
+
         // Encuentra las barras dentro del prefab
         vecinosBar = uiInstance.transform.Find("Vecinos/Barra").GetComponent<Image>();
         empresaBar = uiInstance.transform.Find("Empresa/Barra").GetComponent<Image>();
+
+        _selectedAnswer = -1;
     }
+
 
     // Start is called before the first frame update
     void Start()
@@ -107,6 +110,16 @@ public class GameManager : MonoBehaviour
     public GameStates getState()
     {
         return currentState;
+    }
+
+    public int GetSelectedAnswer()
+    {
+        return _selectedAnswer;
+    }
+
+    public void SetSelectedAnswer(int newAnswer)
+    {
+        _selectedAnswer = newAnswer;
     }
 
     /// <summary>

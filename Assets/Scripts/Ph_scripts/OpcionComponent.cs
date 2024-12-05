@@ -38,15 +38,16 @@ public class OpcionComponent : MonoBehaviour
 
     public void solucion(int opcion)
     {
-        if(opcion==Respuesta)
+        GameManager.GetInstance().SetSelectedAnswer(opcion);  // Guarda la respuesta seleccionada
+
+        if (opcion == Respuesta)
         {
-            if(uiPrefab!=null)uiPrefab.SetActive(false);
+            if (uiPrefab != null) uiPrefab.SetActive(false);
             ShowMessage(_rightAnswerConversation);
         }
         else
         {
             if (uiPrefab != null) uiPrefab.SetActive(false);
-
             ShowMessage(_wrongAnswerConversation);
         }
     }
