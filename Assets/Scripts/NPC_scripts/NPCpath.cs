@@ -77,9 +77,11 @@ public class NPCpath : MonoBehaviour
     {
         if (stop)
         {
+            if (agent.isActiveAndEnabled)
+            {
+                setDest();
 
-            setDest();
-
+            }
         }
         if (j)
         {

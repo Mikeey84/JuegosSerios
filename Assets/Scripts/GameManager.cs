@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     private int _selectedAnswer;
 
+   
+
     void Awake()
     {
         if (instance == null)

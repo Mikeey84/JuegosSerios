@@ -11,12 +11,13 @@ public class Fundido : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        //UIManager.instance.hideObjects();
+        GameManager.GetInstance().setState(GameManager.GameStates.Manual);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Color _color = new Color(sprite.color.r, sprite.color.g , sprite.color.b , sprite.color.a );
-        sprite.color = ;
+        
     }
 }

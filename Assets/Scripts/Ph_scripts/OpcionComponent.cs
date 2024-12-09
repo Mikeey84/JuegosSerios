@@ -11,6 +11,7 @@ public class OpcionComponent : MonoBehaviour
     [SerializeField] string _wrongAnswerConversation;
     [SerializeField] private GameObject uiPrefab;
     [SerializeField] private GameObject flecha;
+    bool comprobar=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,17 @@ public class OpcionComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(comprobar)
+        {
+            if (DialogManager.Instance.fin())
+            {
+                if (uiPrefab != null) uiPrefab.SetActive(false);
+                UIManager.instance.hideObjects();
+                UIManager.instance.Transition();
+                comprobar = false;
+
+            }
+        }
     }
 
     void ShowMessage(string id)
@@ -42,15 +53,17 @@ public class OpcionComponent : MonoBehaviour
 
         if (opcion == Respuesta)
         {
-            if (uiPrefab != null) uiPrefab.SetActive(false);
+            //if (uiPrefab != null) uiPrefab.SetActive(false);
             ShowMessage(_rightAnswerConversation);
             GameManager.GetInstance().SetSelectedAnswer(1);  // Guarda la respuesta seleccionada
+            comprobar = true;
         }
         else
         {
-            if (uiPrefab != null) uiPrefab.SetActive(false);
+            //if (uiPrefab != null) uiPrefab.SetActive(false);
             ShowMessage(_wrongAnswerConversation);
             GameManager.GetInstance().SetSelectedAnswer(0);  // Guarda la respuesta seleccionada
+            comprobar = true;
 
         }
     }
