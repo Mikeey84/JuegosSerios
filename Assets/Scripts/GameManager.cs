@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance; // instancia del GameManager
     
     [SerializeField] private GameObject uiPrefab; // prefab de la interfaz
+    [SerializeField] private GameObject npcManager; // prefab de la interfaz
 
     private GameObject uiInstance; // instancia de la interfaz
 
@@ -118,7 +119,13 @@ public class GameManager : MonoBehaviour
     {
         _selectedAnswer = newAnswer;
     }
-
+    public void initLevel(int i)
+    {
+        if(npcManager!=null)
+        {
+            npcManager.GetComponent<NpcManager>().removeNpc(i);
+        }
+    }
     /// <summary>
     /// Método de obtención del GameManager en la escena
     /// </summary>

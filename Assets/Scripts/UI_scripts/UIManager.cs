@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     [SerializeField] private GameObject[] canvas;
     [SerializeField] private GameObject fundido;
+    [SerializeField] private GameObject Activefundido;
     private int celems;
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,8 @@ public class UIManager : MonoBehaviour
     public void Transition()
     {
         Debug.Log("ee");
-        Instantiate(fundido);
+        GameManager.GetInstance().setState(GameManager.GameStates.Manual);
+        if(fundido!=null)Instantiate(fundido);
     }
+
 }

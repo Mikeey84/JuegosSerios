@@ -29,7 +29,7 @@ public class AccidenteComponent : MonoBehaviour
             {
                 if (multiO != null)
                 {
-
+                    GameManager.GetInstance().setState(GameManager.GameStates.Manual);
                     multiO.SetActive(true);
                 }
             }

@@ -5,14 +5,19 @@ using UnityEngine;
 public class ActiveFundido : MonoBehaviour
 {
     // Start is called before the first frame update
+    private bool comprobar = false;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void Reset()
+    {
+            comprobar = true;
     }
 }
