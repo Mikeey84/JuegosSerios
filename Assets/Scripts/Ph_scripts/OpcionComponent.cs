@@ -44,7 +44,7 @@ public class OpcionComponent : MonoBehaviour
         if (opcion == Respuesta)
         {
             if (uiPrefab != null) uiPrefab.SetActive(false);
-            ShowMessage(_rightAnswerConversation);
+            DialogManager.Instance.ShowMessage(_rightAnswerConversation);
             GameManager.GetInstance().SetSelectedAnswer(1);  // Guarda la respuesta seleccionada
             UIManager.instance.hideObjects();
             UIManager.instance.Transition();
@@ -52,7 +52,7 @@ public class OpcionComponent : MonoBehaviour
         else
         {
             if (uiPrefab != null) uiPrefab.SetActive(false);
-            ShowMessage(_wrongAnswerConversation);
+            DialogManager.Instance.ShowMessage(_wrongAnswerConversation);
             GameManager.GetInstance().SetSelectedAnswer(0);  // Guarda la respuesta seleccionada
             UIManager.instance.hideObjects();
             UIManager.instance.Transition();

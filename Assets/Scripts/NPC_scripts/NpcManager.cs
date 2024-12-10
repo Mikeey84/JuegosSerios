@@ -7,7 +7,7 @@ public class NpcManager : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]private GameObject npc1;
-    private GameObject npc2;
+    [SerializeField]private GameObject npc2;
     void Start()
     {
         npc1.SetActive(true);
@@ -29,5 +29,14 @@ public class NpcManager : MonoBehaviour
             Destroy(npc2);
 
         }
+    }
+    public void addNpc()
+    {
+       if(npc2!=null) npc2.SetActive(true);
+    }
+    public void activeN()
+    {
+        npc2.SetActive(true);
+        npc2.GetComponent<NPCpath>().move();
     }
 }

@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -119,12 +121,29 @@ public class GameManager : MonoBehaviour
     {
         _selectedAnswer = newAnswer;
     }
-    public void initLevel(int i)
+    public void Wait(float t)
+    {
+        
+        StartCoroutine(ActivateAfterTime(t));
+    }
+
+    private IEnumerator ActivateAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+    }
+    public void initLevel(int i,string c)
     {
         if(npcManager!=null)
         {
             npcManager.GetComponent<NpcManager>().removeNpc(i);
+            npcManager.GetComponent<NpcManager>().activeN();
         }
+        if (c != null)
+        {
+            DialogManager.Instance.ShowMessage(c);
+        }
+
     }
     /// <summary>
     /// Método de obtención del GameManager en la escena

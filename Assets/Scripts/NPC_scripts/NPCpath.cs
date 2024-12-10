@@ -57,8 +57,8 @@ public class NPCpath : MonoBehaviour
                         sprite.flipX = 0 < transform.position.x;
                         j = true;
                     }
-                    ac.enabled=true;
-
+                    if(ac != null) ac.enabled=true;
+                    
                 }
             }
 

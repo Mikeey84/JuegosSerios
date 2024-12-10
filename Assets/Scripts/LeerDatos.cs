@@ -42,7 +42,7 @@ public class LeerDatos : MonoBehaviour
     }
 
     // Método para mostrar los mensajes en la consola
-    public string[] MostrarMensajes(string id)
+    public  string[] MostrarMensajes(string id)
     {
         string[] aux = null;
         if (messageData != null && messageData.messages != null)
@@ -62,6 +62,7 @@ public class LeerDatos : MonoBehaviour
         return null;
 
     }
+
 
 
 }

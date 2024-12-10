@@ -10,7 +10,7 @@ public class Fundido : MonoBehaviour
     private Animator anim;
     private bool activar=true;
     private GameObject gObject;
-
+    [SerializeField] private string postAccidente;
     void Start()
     {
         gObject = gameObject.GetComponent<GameObject>();
@@ -46,9 +46,8 @@ public class Fundido : MonoBehaviour
         Debug.Log("adri");
         anim.SetBool("Trans", false);
         gameObject.SetActive(false);
-        GameManager.GetInstance().initLevel(0);
+        GameManager.GetInstance().initLevel(0,postAccidente);
         GameManager.GetInstance().setState(GameManager.GameStates.Game);
-
-
+        UIManager.instance.activeObjects();
     }
 }

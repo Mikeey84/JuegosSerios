@@ -11,4 +11,8 @@ public class Dialog
     {
         get { return _lines; }
     }
+    public void reset()
+    {
+        _lines.Clear();
+    }
 }

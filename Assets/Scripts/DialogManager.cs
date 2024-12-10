@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
+    [SerializeField] LeerDatos LeerDatos;
     [SerializeField] GameObject _dialogBox;
     [SerializeField] GameObject npcs;
     [SerializeField] Text _dialogText;
@@ -41,6 +42,18 @@ public class DialogManager : MonoBehaviour
         if(_gM != null)
             _gM.setState(GameManager.GameStates.Manual);
         StartCoroutine(Type(dialog.Lines[0]));
+    }
+    public void ShowMessage(string id)
+    {
+        
+        string[] aux = LeerDatos.MostrarMensajes(id);
+        _dialog.reset();
+        foreach (string a in aux)
+        {
+            _dialog.Lines.Add(a);
+        }
+        ShowDialog(_dialog);
+
     }
     public void disableDialog()
     {
