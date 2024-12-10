@@ -117,9 +117,16 @@
     },
     {
       "id": "Nivel2_Pincho",
-      "text": [
+      "texts": [
         "Hoy parece que hay mucha gente en la piscina.",
         "Deberé estar atento por si acaso ocurre algo."
+      ]
+    },
+    {
+      "id": "Niños_Gritan",
+      "texts": [
+        "Niños: ¡Socorrista, tienes que venir corriendo aquí!",
+        "Niños: ¡Es una emergencia!"
       ]
     }
 

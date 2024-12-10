@@ -111,4 +111,8 @@ public class DialogManager : MonoBehaviour
     {
         return acabado;
     }
+    public void setObject(GameObject gameObject)
+    {
+        _button = gameObject;
+    }
 }

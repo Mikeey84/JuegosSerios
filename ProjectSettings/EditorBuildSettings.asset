@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piscina/Piscina2.unity
     guid: befdb1da90bc4234da062e6a0e766970
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel2/Nivel2_Pinchazo.unity
+    guid: d5d4545006c4b894c9d6b46160356e7c
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel2/Pinchazo.unity
+    guid: 279a05cf92ebd9d4a850d6f0d26aaa46
   m_configObjects: {}

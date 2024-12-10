@@ -9,6 +9,7 @@ public class DialogController : MonoBehaviour
     [SerializeField] string _messageID;
     [SerializeField] private string _correctConversation;
     [SerializeField] private string _wrongConversation;
+    [SerializeField] private GameObject _activateAfterConversation;
     LeerDatos LeerDatos;
     // metodo que se llama para crear el dialogo
 
@@ -36,6 +37,7 @@ public class DialogController : MonoBehaviour
 
         if (startConversation)
         {
+            DialogManager.Instance.setObject(_activateAfterConversation);
             DialogManager.Instance.ShowDialog(dialog);
         }
     }
