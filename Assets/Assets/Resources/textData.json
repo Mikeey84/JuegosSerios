@@ -107,6 +107,20 @@
         "Lo mejor será empezar a limpiar el fondo de la piscina primero.",
         "Coge la aspiradora que tienes a la derecha de tu pantalla y ve pasándola mientras mantienes el click izquierdo por el fondo."
       ]
+    },
+    {
+      "id": "Nivel2_intro",
+      "texts": [
+        "Hoy me toca limpiar la piscina, tanto el fondo como la superficie.",
+        "Así que me acercaré a la piscina para empezar con la limpieza."
+      ]
+    },
+    {
+      "id": "Nivel2_Pincho",
+      "text": [
+        "Hoy parece que hay mucha gente en la piscina.",
+        "Deberé estar atento por si acaso ocurre algo."
+      ]
     }
 
   ]
