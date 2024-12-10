@@ -687,6 +687,10 @@ PrefabInstance:
       propertyPath: startConversation
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 576226047730676538, guid: 974f6177b0f2fab4798edbcd47020cde, type: 3}
+      propertyPath: _activateAfterConversation
+      value: 
+      objectReference: {fileID: 1429593026}
     - target: {fileID: 5039183556716168607, guid: 974f6177b0f2fab4798edbcd47020cde, type: 3}
       propertyPath: m_LocalPosition.x
       value: 960.00256
