@@ -141,6 +141,18 @@
         "Este niño se ha caido y se ha clavado un palo.",
         "Tengo que tomar una decisión para ver que hacer antes de llamar a la ambulancia."
       ]
+    },
+    {
+      "id": "AciertoPalo",
+      "texts": [
+        "¡Acertaste! No debemos quitar el palo de la herida para que no pierda sangre y que actuen los servicios de emergencia."
+      ]
+    },
+    {
+      "id": "FalloPalo",
+      "texts": [
+        "¡Fallaste! No debemos quitar el palo de la herida para que no pierda sangre y que actuen los servicios de emergencia."
+      ]
     }
 
   ]
