@@ -46,10 +46,11 @@ public class NPCpath : MonoBehaviour
                 animator.SetBool("Moving", false);
                 if (lesion)
                 {
-                    agent.enabled = false;
+                    
                     
                     if (transform.childCount > 0)
                     {
+                        agent.enabled = false;
                         Debug.Log("a");
                         animator.SetBool("Jump", true);
                         transform.GetChild(0).gameObject.SetActive(true);
@@ -63,7 +64,6 @@ public class NPCpath : MonoBehaviour
             }
 
         }
-
     }
     public void move()
     {
@@ -77,7 +77,7 @@ public class NPCpath : MonoBehaviour
     {
         if (stop)
         {
-            if (agent.isActiveAndEnabled)
+            if (agent.enabled)
             {
                 setDest();
 

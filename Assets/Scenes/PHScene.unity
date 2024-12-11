@@ -3797,6 +3797,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1572861012975154372, guid: 3829fb1b3121acd4aa816924700d3455, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "Level1Ni\xF1os"
+      objectReference: {fileID: 0}
     - target: {fileID: 2683732270329392100, guid: 3829fb1b3121acd4aa816924700d3455, type: 3}
       propertyPath: m_Name
       value: Canvas

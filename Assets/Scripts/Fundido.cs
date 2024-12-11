@@ -2,10 +2,12 @@ using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fundido : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField] private string nextScene;
     private SpriteRenderer sprite;
     private Animator anim;
     private bool activar=true;
@@ -43,11 +45,8 @@ public class Fundido : MonoBehaviour
     }
     public void setInactive()
     {
-        Debug.Log("adri");
-        anim.SetBool("Trans", false);
-        gameObject.SetActive(false);
-        GameManager.GetInstance().initLevel(0,postAccidente);
-        GameManager.GetInstance().setState(GameManager.GameStates.Game);
-        UIManager.instance.activeObjects();
+
+        SceneManager.LoadScene(nextScene);
+
     }
 }

@@ -17,6 +17,7 @@ public class OpcionComponent : MonoBehaviour
     void Start()
     {
         LeerDatos = GetComponent<LeerDatos>();
+
     }
 
     // Update is called once per frame
@@ -63,7 +64,7 @@ public class OpcionComponent : MonoBehaviour
             }
             GameManager.GetInstance().UpdateBar(_barType, -0.2f);
         }
-        flecha.gameObject.SetActive(true);
+        if(flecha!=null)flecha.gameObject.SetActive(true);
     }
 
 }

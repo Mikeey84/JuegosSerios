@@ -36,7 +36,7 @@ public class NpcManager : MonoBehaviour
     }
     public void activeN()
     {
-        npc2.SetActive(true);
+        Instantiate(npc2);
         npc2.GetComponent<NPCpath>().move();
     }
 }

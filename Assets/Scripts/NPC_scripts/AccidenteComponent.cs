@@ -13,6 +13,7 @@ public class AccidenteComponent : MonoBehaviour
     void Start()
     {
         collider = GetComponent<CircleCollider2D>();
+
     }
     // Update is called once per frame
     void Update()
@@ -27,9 +28,9 @@ public class AccidenteComponent : MonoBehaviour
 
             if (hit.collider == collider) // Verifica si el raycast impactó algo
             {
+                Debug.Log("hit");
                 if (multiO != null)
                 {
-                    GameManager.GetInstance().setState(GameManager.GameStates.Manual);
                     multiO.SetActive(true);
                 }
             }
