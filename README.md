@@ -55,6 +55,9 @@ El diseño y desarrollo de **Save a Life** está respaldado por un completo [Doc
 
 El contenido de **Save a Life** está bajo la licencia de uso MIT.
 
----
+![alt text](LicenciaArtbreeder.png)
+https://www.canva.com/es_es/help/using-canva-to-create-products-for-sale/ // licencia de Canva frente al uso de su IA
+
+EL resto de imagenes del proyecto son de la IA de Canva mezcladas con Artbreeder, por lo que solo se requiere la licencia de Canva para su uso.
 
 ¡Explora, aprende y salva vidas con **Save a Life**! 🚑
