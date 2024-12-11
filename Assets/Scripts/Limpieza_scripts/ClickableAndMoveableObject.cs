@@ -17,8 +17,11 @@ public class ClickableAndMoveableObject : MonoBehaviour
     void Update()
     {
         // Detectar clic izquierdo y si el ratón está sobre el collider
-        if (Input.GetMouseButtonDown(0) && MouseInMopSurface())
+        if (Input.GetMouseButtonDown(0) && MouseInSurface())
         {
+            // Llama al método personalizado de clic
+            OnClick();
+
             // Inicia el movimiento arrastrando
             isDragging = true;
 
@@ -32,6 +35,7 @@ public class ClickableAndMoveableObject : MonoBehaviour
         {
             // Finaliza el movimiento
             isDragging = false;
+            OnClickUp();
         }
 
         // Si estamos arrastrando el objeto
@@ -43,7 +47,17 @@ public class ClickableAndMoveableObject : MonoBehaviour
         }
     }
 
-    bool MouseInMopSurface()
+    protected virtual void OnClick()
+    {
+        // Método virtual para manejar clics en objetos interactivos
+    }
+
+    protected virtual void OnClickUp()
+    {
+        // Método virtual para manejar 
+    }
+
+    bool MouseInSurface()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
