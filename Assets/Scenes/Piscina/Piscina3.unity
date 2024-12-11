@@ -419,6 +419,7 @@ MonoBehaviour:
   _wrongAnswerConversation: FalloTirarse
   uiPrefab: {fileID: 1569455705}
   flecha: {fileID: 0}
+  _barType: Vecinos
 --- !u!114 &119652392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,11 +1023,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 576226047730676538, guid: 974f6177b0f2fab4798edbcd47020cde, type: 3}
       propertyPath: _wrongConversation
-      value: FalloPH
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 576226047730676538, guid: 974f6177b0f2fab4798edbcd47020cde, type: 3}
       propertyPath: _correctConversation
-      value: AciertoPH
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5039183556716168607, guid: 974f6177b0f2fab4798edbcd47020cde, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2306,6 +2307,10 @@ PrefabInstance:
       value: 0.9811321
       objectReference: {fileID: 0}
     - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _barType
+      value: Vecinos
+      objectReference: {fileID: 0}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: uiPrefab
       value: 
       objectReference: {fileID: 1569455705}
@@ -2384,6 +2389,10 @@ PrefabInstance:
     - target: {fileID: 4764001491889433730, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _barType
+      value: Vecinos
       objectReference: {fileID: 0}
     - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: uiPrefab

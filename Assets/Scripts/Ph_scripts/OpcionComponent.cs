@@ -11,6 +11,7 @@ public class OpcionComponent : MonoBehaviour
     [SerializeField] string _wrongAnswerConversation;
     [SerializeField] private GameObject uiPrefab;
     [SerializeField] private GameObject flecha;
+    [SerializeField] private string _barType;
   
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,7 @@ public class OpcionComponent : MonoBehaviour
                 UIManager.instance.hideObjects();
                 UIManager.instance.Transition();
             }
+            GameManager.GetInstance().UpdateBar(_barType, -0.2f);
         }
         flecha.gameObject.SetActive(true);
     }

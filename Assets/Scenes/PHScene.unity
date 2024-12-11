@@ -3899,6 +3899,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2071446683}
     - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _barType
+      value: Empresa
+      objectReference: {fileID: 0}
+    - target: {fileID: 319063237429019716, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: uiPrefab
       value: 
       objectReference: {fileID: 1499515736}
@@ -3962,6 +3966,10 @@ PrefabInstance:
       propertyPath: flecha
       value: 
       objectReference: {fileID: 2071446683}
+    - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: _barType
+      value: Empresa
+      objectReference: {fileID: 0}
     - target: {fileID: 6409748361980910207, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: uiPrefab
       value: 

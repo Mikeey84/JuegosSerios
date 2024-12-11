@@ -21,16 +21,17 @@ public class DialogController : MonoBehaviour
         int selectedAnswer = GameManager.GetInstance().GetSelectedAnswer();
         string messageID;
 
-        if (selectedAnswer != -1)
-        {
-            if (selectedAnswer == 1) messageID = _correctConversation; // gestionar bien qué toca
-            else messageID = _wrongConversation;
-            GameManager.GetInstance().SetSelectedAnswer(-1);
-            _messageID = messageID;
-        }
+        //if (selectedAnswer != -1)
+        //{
+        //    if (selectedAnswer == 1) messageID = _correctConversation; // gestionar bien qué toca
+        //    else messageID = _wrongConversation;
+        //    GameManager.GetInstance().SetSelectedAnswer(-1);
+        //    _messageID = messageID;
+        //}
 
         if (_messageID != null)
         {
+            Debug.Log(_messageID);
             string[] aux = LeerDatos.MostrarMensajes(_messageID);
 
 
