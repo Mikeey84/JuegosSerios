@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Piscina/Piscinaantigua.unity
     guid: a6f1889f4237a8e4593b637f2fec582f
   - enabled: 1
-    path: Assets/Scenes/Piscina/Piscina3.unity
+    path: "Assets/Scenes/Piscina/Level1Ni\xF1os.unity"
     guid: e5cec285f2bffc847b4d42b6cd13e0fa
   - enabled: 1
     path: Assets/Scenes/Piscina/Piscina2.unity
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piscina/Nivel2/Pinchazo.unity
     guid: 279a05cf92ebd9d4a850d6f0d26aaa46
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Level1Alergico.unity
+    guid: cf8d537c343b7da4d89afc492ab5fb60
   m_configObjects: {}

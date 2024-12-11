@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4764001491889433730
 Transform:
   m_ObjectHideFlags: 0
@@ -569,6 +569,8 @@ MonoBehaviour:
   Respuesta: 2
   dialog:
     _lines: []
+  _rightAnswerConversation: 
+  _wrongAnswerConversation: 
   uiPrefab: {fileID: 0}
   flecha: {fileID: 0}
 --- !u!1 &4478654327738353835
@@ -733,5 +735,7 @@ MonoBehaviour:
   Respuesta: 1
   dialog:
     _lines: []
+  _rightAnswerConversation: 
+  _wrongAnswerConversation: 
   uiPrefab: {fileID: 0}
   flecha: {fileID: 0}

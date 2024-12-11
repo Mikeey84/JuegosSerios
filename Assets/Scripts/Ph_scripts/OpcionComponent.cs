@@ -16,6 +16,7 @@ public class OpcionComponent : MonoBehaviour
     void Start()
     {
         LeerDatos = GetComponent<LeerDatos>();
+
     }
 
     // Update is called once per frame
@@ -61,7 +62,7 @@ public class OpcionComponent : MonoBehaviour
                 UIManager.instance.Transition();
             }
         }
-        flecha.gameObject.SetActive(true);
+        if(flecha!=null)flecha.gameObject.SetActive(true);
     }
 
 }
