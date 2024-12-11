@@ -2187,6 +2187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ManualAbierto 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5826959088661764617, guid: c6c01002b7d65694f802a5c32e77787b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6622749623729203181, guid: c6c01002b7d65694f802a5c32e77787b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.28
@@ -3020,7 +3024,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &1598015212
 BoxCollider2D:
   m_ObjectHideFlags: 0

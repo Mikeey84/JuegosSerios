@@ -3000,6 +3000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ManualAbierto
       objectReference: {fileID: 0}
+    - target: {fileID: 5826959088661764617, guid: c6c01002b7d65694f802a5c32e77787b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6622749623729203181, guid: c6c01002b7d65694f802a5c32e77787b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.28
