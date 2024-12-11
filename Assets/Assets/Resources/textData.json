@@ -75,6 +75,14 @@
       ]
     },
     {
+      "id": "PostLimpieza",
+      "texts": [
+        "Madre mia que paliza me he pegado con el recogedor.",
+	"Espero que hoy sea un dia tranquilo.",
+	"Anda, por ahi baja el primer vecino del día"
+      ]
+    },
+    {
       "id": "AciertoPH",
       "texts": [
         "Si, como has podido comprobar el nivel del PH no es el correcto."
@@ -105,6 +113,18 @@
       "id": "FalloTirarse",
       "texts": [
         "No, esta manera no es la más óptima para tirarte a la piscina."
+      ]
+    },
+    {
+      "id": "AciertoAlergia",
+      "texts": [
+        "Efectivamente, debemos llamar a la ambulancia lo antes posible"
+      ]
+    },
+    {
+      "id": "FalloAlergia",
+      "texts": [
+        "No, debemos llamar a la ambulancia lo antes posible"
       ]
     },
     {

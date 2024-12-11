@@ -31,7 +31,8 @@ public class AccidenteComponent : MonoBehaviour
                 Debug.Log("hit");
                 if (multiO != null)
                 {
-                    multiO.SetActive(true);
+                    //multiO.SetActive(true);
+                   Instantiate(multiO);
                 }
             }
         }
