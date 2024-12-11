@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 6432750932778712694}
   - component: {fileID: 1267233320485734630}
   m_Layer: 0
-  m_Name: ManualAbierto 1
+  m_Name: ManualAbierto Socorrismo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
