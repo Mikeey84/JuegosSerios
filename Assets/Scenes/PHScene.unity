@@ -3926,6 +3926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MultiOpcion
       objectReference: {fileID: 0}
+    - target: {fileID: 587649262671091486, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4764001491889433730, guid: 10dd6f2671a7b084eb5d4dde94b01d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1311144
