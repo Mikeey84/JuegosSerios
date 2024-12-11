@@ -61,6 +61,7 @@ public class OpcionComponent : MonoBehaviour
                 UIManager.instance.Transition();
             }
         }
+        flecha.gameObject.SetActive(true);
     }
 
 }

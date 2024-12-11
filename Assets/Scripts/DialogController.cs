@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DialogController : MonoBehaviour
@@ -28,17 +29,20 @@ public class DialogController : MonoBehaviour
             _messageID = messageID;
         }
 
-        string[] aux = LeerDatos.MostrarMensajes(_messageID);
-
-        foreach (string a in aux)
+        if (_messageID != null)
         {
-            dialog.Lines.Add(a);
-        }
+            string[] aux = LeerDatos.MostrarMensajes(_messageID);
 
-        if (startConversation)
-        {
-            DialogManager.Instance.setObject(_activateAfterConversation);
-            DialogManager.Instance.ShowDialog(dialog);
+
+            foreach (string a in aux)
+            {
+                dialog.Lines.Add(a);
+            }
+            if (startConversation)
+            {
+                DialogManager.Instance.setObject(_activateAfterConversation);
+                DialogManager.Instance.ShowDialog(dialog);
+            }
         }
     }
 
