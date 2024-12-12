@@ -3,6 +3,7 @@ using UnityEngine;
 public class Dirt : MonoBehaviour
 {
     private string dirtType;
+    public DirtManager manager;
 
     public void SetDirtType(string type)
     {
@@ -23,6 +24,7 @@ public class Dirt : MonoBehaviour
             if (mop.CanClean(dirtType))
             {
                 // Limpia este objeto
+                manager.dirtCount--;
                 Destroy(gameObject);
             }
         }

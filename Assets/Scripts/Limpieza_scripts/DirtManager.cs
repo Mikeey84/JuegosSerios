@@ -10,6 +10,7 @@ public class DirtManager : MonoBehaviour
         public string dirtType;    // Tipo de suciedad (ejemplo: "hoja", "mancha")
     }
 
+    [SerializeField] public GameObject _flecha;
     public List<DirtPrefab> dirtPrefabs; // Lista de prefabs con sus tipos
     public int dirtCount = 20;           // Número total de objetos a generar
 
@@ -19,6 +20,14 @@ public class DirtManager : MonoBehaviour
     {
         CalculateScreenBounds();
         GenerateDirt();
+    }
+
+    private void Update()
+    {
+        if(dirtCount <= 0)
+        {
+            _flecha.SetActive(true);
+        }
     }
 
     private void CalculateScreenBounds()
@@ -43,6 +52,7 @@ public class DirtManager : MonoBehaviour
 
             GameObject dirt = Instantiate(selectedDirt.prefab, position, Quaternion.identity);
             dirt.AddComponent<Dirt>().SetDirtType(selectedDirt.dirtType);
+            dirt.GetComponent<Dirt>().manager = this;   
         }
     }
 }

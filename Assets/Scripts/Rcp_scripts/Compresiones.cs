@@ -57,7 +57,6 @@ public class Compresiones : MonoBehaviour
             else
             {
                 DialogManager.Instance.ShowMessage("RCPMal");
-
             }
             manos.SetActive(false);
             flecha.SetActive(true);

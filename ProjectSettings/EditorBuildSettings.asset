@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piscina/Nivel2/RCP.unity
     guid: d31119765b18e3b4fbd43a813a134350
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel2/Level2RCP.unity
+    guid: a371161e2282ec9418eb8f028731c7a6
   m_configObjects: {}
