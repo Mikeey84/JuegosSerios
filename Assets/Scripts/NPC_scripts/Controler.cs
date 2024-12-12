@@ -25,4 +25,9 @@ public class Controler : MonoBehaviour
             animator.SetBool(animAccidente, true);
         }
     }
+    public void activarNado()
+    {
+        rutas.enabled = true;
+        animator.SetBool("nadar", true);
+    }
 }

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AccidenteComponent : MonoBehaviour
 {
     public bool ac;
     private CircleCollider2D collider;
-
+    [SerializeField] private string minijuego;
     [SerializeField] GameObject multiO;
 
     // Start is called before the first frame update
@@ -33,6 +34,14 @@ public class AccidenteComponent : MonoBehaviour
                 {
                     //multiO.SetActive(true);
                    Instantiate(multiO);
+                }
+                else
+                {
+                    if (minijuego != null)
+                    {
+                        SceneManager.LoadScene(minijuego);
+                        Debug.Log("rcp");
+                    }
                 }
             }
         }
