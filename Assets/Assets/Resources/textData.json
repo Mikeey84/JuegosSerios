@@ -83,6 +83,14 @@
       ]
     },
     {
+      "id": "Lluvia",
+      "texts": [
+        "Uf otro dia más en la piscina.",
+	"Bueno ya quedan pocos días de verano y acabaré de trabajar.",
+	"Hoy el día está muy nublado espero que no llueva."
+      ]
+    },
+    {
       "id": "AciertoPH",
       "texts": [
         "Si, como has podido comprobar el nivel del PH no es el correcto."
@@ -169,8 +177,7 @@
         "El nadador ha sufrido un paro cardiaco mientras nadaba.",
         "He conseguido sacarlo de la piscina, pero no tiene respiración y tampoco encuentro su pulso, debo realizarle la RCP.",
 	"La RCP es una técnica que se basa en una secuencia de 30:2.",
-	"Haz click cuando se te indique para realizar compresiones hasta llegar a 30.",
-	"Después mantén ESPACIO para las dos ventilaciones."
+	"Haz click cuando se te indique para realizar compresiones hasta llegar a 30."
       ]
     },
     {
