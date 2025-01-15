@@ -188,6 +188,20 @@
       ]
     },
     {
+      "id": "IntroBotiquin",
+      "texts": [
+        "La chica ha sufrido una rozadura.",
+        "Debo limpiar primero la herida con el suero fisiológico y luego taparla con gasas."
+      ]
+    },
+    {
+      "id": "HeridaCurada",
+      "texts": [
+        "Parece que la herida ya está desinfectada.",
+        "La chica ya puede seguir jugando."
+      ]
+    },
+    {
       "id": "RCPBien",
       "texts": [
         "El nadador parece que respira y su pulso ha vuelto."

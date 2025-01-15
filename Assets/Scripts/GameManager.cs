@@ -61,10 +61,10 @@ public class GameManager : MonoBehaviour
         if (currentState == GameStates.Game)
         {
             uiInstance.SetActive(true);
-            vecinosBar.enabled=true;
+            vecinosBar.enabled = true;
             empresaBar.enabled = true;
         }
-        else if(currentState == GameStates.PH)
+        else if (currentState == GameStates.PH)
         {
             uiInstance.SetActive(false);
             vecinosBar.enabled = false;
@@ -90,13 +90,14 @@ public class GameManager : MonoBehaviour
         {
             case "Vecinos":
                 vecinosBar.fillAmount += value;
+                Debug.Log(vecinosBar.fillAmount);
                 if (vecinosBar.fillAmount > 1f) vecinosBar.fillAmount = 0;
-                if (vecinosBar.fillAmount < 0) Debug.Log("PERDISTE");
+                if (vecinosBar.fillAmount <= 0) Debug.Log("PERDISTE");
                 break;
             case "Empresa":
                 empresaBar.fillAmount += value;
                 if (vecinosBar.fillAmount > 1f) vecinosBar.fillAmount = 0;
-                if (empresaBar.fillAmount < 0) Debug.Log("PERDISTE");
+                if (empresaBar.fillAmount <= 0) Debug.Log("PERDISTE");
                 break;
             default:
                 Debug.LogWarning($"Barra {barName} no encontrada");
