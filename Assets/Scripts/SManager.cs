@@ -25,4 +25,11 @@ public class SManager : MonoBehaviour
         //gm.setState(GameManager.GameStates.PH);
         SceneManager.LoadScene(name);
     }
+    public void Fin(string name)
+    {
+
+        Debug.Log(name);
+        gm.setState(GameManager.GameStates.PH);
+        SceneManager.LoadScene(name);
+    }
 }

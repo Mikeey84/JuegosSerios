@@ -30,16 +30,6 @@ public class Curar : MonoBehaviour
             {
                 mierda.SetActive(false);
             }
-            else
-            {
-                if (!error)
-                {
-                    Debug.Log("ee");
-
-                    GameManager.GetInstance().UpdateBar("Vecinos", -0.25f);
-                    error = true;
-                }
-            }
 
         }
         else

@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piscina/Nivel4/Botiquin.unity
     guid: 7ed69af5c38ade044a5d6d0b441a1cf2
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: c2d76ee363b9d4f42ae1a3d23833f603
   m_configObjects: {}
