@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piscina/Nivel2/Level2RCP.unity
     guid: a371161e2282ec9418eb8f028731c7a6
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel4/Level4Botiquin.unity
+    guid: 690cd39ee54dfc844bd60093b9e7c42b
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel4/Level4Lluvia.unity
+    guid: 4faa41f5863708c4abeeb5f493e8d87f
   m_configObjects: {}

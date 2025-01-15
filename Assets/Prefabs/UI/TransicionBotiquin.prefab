@@ -119,5 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5fa6480f53f20540917a88b50d1dd04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Level2Hojas
+  nextScene: Level4Botiquin
+  activar: 1
   postAccidente: PostInmersion

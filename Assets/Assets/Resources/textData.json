@@ -91,6 +91,13 @@
       ]
     },
     {
+      "id": "PostLluvia",
+      "texts": [
+        "Que barbaridad la cantidad de agua que ha caído.",
+	"Menos mal que he cerrado la piscina a tiempo."
+      ]
+    },
+    {
       "id": "AciertoPH",
       "texts": [
         "Si, como has podido comprobar el nivel del PH no es el correcto."
