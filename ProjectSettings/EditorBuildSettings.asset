@@ -50,4 +50,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piscina/Nivel2/Level2RCP.unity
     guid: a371161e2282ec9418eb8f028731c7a6
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel3/Level3Skimmers.unity
+    guid: ebf9555104ac9f14e9aa02ab7c0a2819
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel3/LimpiezaSkimmers.unity
+    guid: f0a9ab9d9498bfd489cdb89c3d26bdbc
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel4/Level4Lluvia.unity
+    guid: 4faa41f5863708c4abeeb5f493e8d87f
+  - enabled: 1
+    path: Assets/Scenes/Piscina/Nivel3/Level3GolpeDeCalor.unity
+    guid: c631b5874ab43cc409d02e148920806e
   m_configObjects: {}

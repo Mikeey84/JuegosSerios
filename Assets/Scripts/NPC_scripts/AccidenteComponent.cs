@@ -9,7 +9,7 @@ public class AccidenteComponent : MonoBehaviour
     private CircleCollider2D collider;
     [SerializeField] private string minijuego;
     [SerializeField] GameObject multiO;
-
+    [SerializeField] GameObject conversation;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,18 +30,26 @@ public class AccidenteComponent : MonoBehaviour
             if (hit.collider == collider) // Verifica si el raycast impactó algo
             {
                 Debug.Log("hit");
-                if (multiO != null)
+                if(conversation != null)
                 {
-                    //multiO.SetActive(true);
-                   Instantiate(multiO);
+                    conversation.SetActive(true);
                 }
                 else
                 {
-                    if (minijuego != null)
+                    if (multiO != null)
                     {
-                        SceneManager.LoadScene(minijuego);
-                        Debug.Log("rcp");
+                        //multiO.SetActive(true);
+                       Instantiate(multiO);
                     }
+                    else
+                    {
+                        if (minijuego != null)
+                        {
+                            SceneManager.LoadScene(minijuego);
+                            Debug.Log("rcp");
+                        }
+                    }
+
                 }
             }
         }
