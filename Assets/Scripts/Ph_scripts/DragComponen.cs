@@ -17,6 +17,7 @@ public class DragObject2D : MonoBehaviour
     {
         if (_gameManager.getState() == GameManager.GameStates.Manual)
         {
+
             return;
         }
         if (Input.GetMouseButtonDown(0))
