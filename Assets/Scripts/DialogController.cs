@@ -18,7 +18,7 @@ public class DialogController : MonoBehaviour
     {
         LeerDatos = GetComponent<LeerDatos>();
 
-        int selectedAnswer = GameManager.GetInstance().GetSelectedAnswer();
+        //int selectedAnswer = GameManager.GetInstance().GetSelectedAnswer();
         string messageID;
 
         //if (selectedAnswer != -1)

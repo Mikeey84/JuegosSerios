@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,7 +10,7 @@ public class Lifeguard : MonoBehaviour
 
     private SpriteRenderer sprite;
     private Animator animator;
-
+    private bool isGrabbing;
     GameManager gm;
 
 
@@ -24,10 +25,17 @@ public class Lifeguard : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-
+        isGrabbing = false;
         mainCamera = Camera.main;
     }
-
+    public void Grabbing(bool grabbing)
+    {
+        isGrabbing = grabbing;
+    }
+    public bool IsGrabbing()
+    {
+        return isGrabbing;
+    }
     void CheckPosition()
     {
         // Comprueba la distancia restante para detener la animación

@@ -210,6 +210,57 @@
       "texts": [
         "¡Fallaste! No debemos quitar el palo de la herida para que no pierda sangre y que actuen los servicios de emergencia."
       ]
+    },
+    {
+      "id": "PreSkimmers",
+      "texts": [
+        "Hoy me toca realizar el mantenimiento a los skimmers.",
+        "Me acercaré a la piscina para empezar con la limpieza."
+      ]
+    },
+    {
+      "id": "Skimmers",
+      "texts": [
+        "Para limpiarlo tengo que quitar la tapa y tirar a la basura todas las hojas que haya dentro.",
+        "No me apetece mucho tocar hojas blanditas... pero hay que limpiarlo para que la piscina este en condiciones óptimas."
+      ]
+    },
+    {
+      "id": "PostSkimmers",
+      "texts": [
+        "Ya he quitado todas las hojas que había.",
+        "Ahora tendré que estar atento de las personas que bajan a la piscina."
+      ]
+    },
+    {
+      "id": "PreGolpeDeCalor",
+      "texts": [
+        "Que calor que hace hoy...",
+        "Esperemos que no baje ahora mucha gente.",
+        "Podría ser peligroso con este calor.",
+        "Bueno, ha bajado un vecino, estaré atento por si acaso..."
+      ]
+    },
+    {
+      "id": "GolpeDeCalor",
+      "texts": [
+        "Socorrista: ¿Señor está bien?",
+        "Señor: ...",
+        "Socorrista: ¡Le ha dado un golpe de calor!",
+        "Socorrista: Tendré que llevarlo a un lugar a la sombra."
+      ]
+    },
+    {
+      "id": "AciertoGolpe",
+      "texts": [
+        "¡Acertaste! Estas son las preguntas básicas para saber si la persona sabe ubicarse personal, espacial y temporalmente!"
+      ]
+    },
+    {
+      "id": "FalloGolpe",
+      "texts": [
+        "¡Fallaste! No son las preguntas adecuadas para saber si una persona se encuentra en un buen estado mental tras un golpe de calor."
+      ]
     }
 
   ]
