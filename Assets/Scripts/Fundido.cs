@@ -7,7 +7,7 @@ public class Fundido : MonoBehaviour
     [SerializeField] private string nextScene;
     private SpriteRenderer sprite;
     private Animator anim;
-    private bool activar=true;
+    public bool activar=true;
     private GameObject gObject;
     [SerializeField] private string postAccidente;
     void Start()
