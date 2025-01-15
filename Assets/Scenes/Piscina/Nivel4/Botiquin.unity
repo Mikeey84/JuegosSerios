@@ -1189,8 +1189,9 @@ GameObject:
   - component: {fileID: 1807225347}
   - component: {fileID: 1807225346}
   - component: {fileID: 1807225349}
-  - component: {fileID: 1807225353}
   - component: {fileID: 1807225352}
+  - component: {fileID: 1807225351}
+  - component: {fileID: 1807225350}
   m_Layer: 0
   m_Name: gasas
   m_TagString: Untagged
@@ -1286,19 +1287,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1807225352
-MonoBehaviour:
+--- !u!50 &1807225350
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807225345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d44ead0847bd348803dae353f7deb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &1807225353
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &1807225351
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1343,6 +1359,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.41}
   m_EdgeRadius: 0
+--- !u!114 &1807225352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807225345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484fec3340cce1049aea90a075cb8920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1938155338
 GameObject:
   m_ObjectHideFlags: 0
