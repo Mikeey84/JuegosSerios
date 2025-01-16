@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961004338806480836, guid: c3f4fa43e4895694c8fccd6f92781527, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 99035b4cf84d7664cb8e63aa17691ef7, type: 2}
     - target: {fileID: 4916882437212990455, guid: c3f4fa43e4895694c8fccd6f92781527, type: 3}
       propertyPath: m_Name
       value: Rozadura Variant
