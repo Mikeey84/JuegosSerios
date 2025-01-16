@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
 
     private GameObject uiInstance; // instancia de la interfaz
 
-    private Image vecinosBar; // barra de los vecinos
-    private Image empresaBar; // barra de la empresa
+    public Image vecinosBar; // barra de los vecinos
+    public Image empresaBar; // barra de la empresa
 
     private GameStates currentState;
 
@@ -92,12 +92,10 @@ public class GameManager : MonoBehaviour
                 vecinosBar.fillAmount += value;
                 Debug.Log(vecinosBar.fillAmount);
                 if (vecinosBar.fillAmount > 1f) vecinosBar.fillAmount = 0;
-                if (vecinosBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
                 break;
             case "Empresa":
                 empresaBar.fillAmount += value;
                 if (vecinosBar.fillAmount > 1f) vecinosBar.fillAmount = 0;
-                if (empresaBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
                 break;
             default:
                 Debug.LogWarning($"Barra {barName} no encontrada");

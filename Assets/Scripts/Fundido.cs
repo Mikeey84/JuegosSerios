@@ -42,8 +42,9 @@ public class Fundido : MonoBehaviour
     }
     public void setInactive()
     {
-
-        SceneManager.LoadScene(nextScene);
+        if (GameManager.GetInstance().vecinosBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
+        else if (GameManager.GetInstance().empresaBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
+        else SceneManager.LoadScene(nextScene);
 
     }
 }

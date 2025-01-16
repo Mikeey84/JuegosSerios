@@ -20,7 +20,8 @@ public class SManager : MonoBehaviour
     }
     public void changeScene(string name)
     {
-
+        if (GameManager.GetInstance().vecinosBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
+        if (GameManager.GetInstance().empresaBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
         Debug.Log(name);
         //gm.setState(GameManager.GameStates.PH);
         SceneManager.LoadScene(name);
@@ -30,6 +31,8 @@ public class SManager : MonoBehaviour
 
         Debug.Log(name);
         gm.setState(GameManager.GameStates.PH);
-        SceneManager.LoadScene(name);
+        if (GameManager.GetInstance().empresaBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
+        else if (GameManager.GetInstance().vecinosBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
+        else SceneManager.LoadScene(name);
     }
 }
