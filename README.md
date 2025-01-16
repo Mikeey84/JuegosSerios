@@ -43,7 +43,7 @@ El juego se desarrolla en un entorno top-down que combina áreas interactivas co
 
 ## 📚 Documentación Detallada
 
-El diseño y desarrollo de **Save a Life** está respaldado por un completo [Documento de Diseño de Juego (GDD)](Assets/Documentation/SAVE A LIFE-GDD.pdf), que incluye:
+El diseño y desarrollo de **Save a Life** está respaldado por un completo [Documento de Diseño de Juego (GDD)](Assets/Documentation/SAVEALIFE-GDD.pdf), que incluye:
 
 1. **Historia y narrativa:** Desde el inicio humilde como socorrista novato hasta la posibilidad de ganarte el respeto de la comunidad.
 2. **Mecánicas y jugabilidad:** Detalles sobre los niveles, minijuegos y evaluación de tus habilidades.
