@@ -46,6 +46,11 @@ public class Compresiones : MonoBehaviour
                     Debug.Log(comp);
                     manos.GetComponent<Animator>().SetBool("compresiones", true);
                 }
+                else
+                {
+
+                    comp--;
+                }
             }
         }
         else
@@ -56,6 +61,7 @@ public class Compresiones : MonoBehaviour
             }
             else
             {
+                GameManager.GetInstance().UpdateBar("Vecinos", -0.4f);
                 DialogManager.Instance.ShowMessage("RCPMal");
             }
             manos.SetActive(false);
