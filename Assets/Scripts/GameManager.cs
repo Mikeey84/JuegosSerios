@@ -92,12 +92,12 @@ public class GameManager : MonoBehaviour
                 vecinosBar.fillAmount += value;
                 Debug.Log(vecinosBar.fillAmount);
                 if (vecinosBar.fillAmount > 1f) vecinosBar.fillAmount = 0;
-                if (vecinosBar.fillAmount <= 0) Debug.Log("PERDISTE");
+                if (vecinosBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
                 break;
             case "Empresa":
                 empresaBar.fillAmount += value;
                 if (vecinosBar.fillAmount > 1f) vecinosBar.fillAmount = 0;
-                if (empresaBar.fillAmount <= 0) Debug.Log("PERDISTE");
+                if (empresaBar.fillAmount <= 0) SceneManager.LoadScene("FinalMalo");
                 break;
             default:
                 Debug.LogWarning($"Barra {barName} no encontrada");

@@ -62,7 +62,7 @@ public class OpcionComponent : MonoBehaviour
                 UIManager.instance.hideObjects();
                 UIManager.instance.Transition();
             }
-            GameManager.GetInstance().UpdateBar(_barType, -0.2f);
+            GameManager.GetInstance().UpdateBar(_barType, -0.5f);
         }
         if(flecha!=null)flecha.gameObject.SetActive(true);
     }
