@@ -226,9 +226,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Estimado Socorrista ha sido un placer contar con usted este a\xF1o en
-    la plantilla, esperamos volver a trabajar con usted el a\xF1o que viene. Que 
-    tenga un feliz invierno."
+  m_text: "Estimado Socorrista. Tras tu trabajo hemos podido comprobar que no eres
+    apto para este trabajo, por lo que est\xE1s despedido.\nUn saludo,\nJavier."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
