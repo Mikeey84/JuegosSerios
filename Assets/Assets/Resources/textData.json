@@ -71,30 +71,30 @@
       "id": "PostInmersion",
       "texts": [
         "Buf, que susto me ha dado ese niño, menos mal que he estado atento.",
-	"Creo que esta bajando un señor a la piscina, madre mia va medio desnudo en esta urbanizacion no se cortan un pelo"
+        "Creo que esta bajando un señor a la piscina, madre mia va medio desnudo en esta urbanizacion no se cortan un pelo"
       ]
     },
     {
       "id": "PostLimpieza",
       "texts": [
         "Madre mia que paliza me he pegado con el recogedor.",
-	"Espero que hoy sea un dia tranquilo.",
-	"Anda, por ahi baja el primer vecino del día"
+        "Espero que hoy sea un dia tranquilo.",
+        "Anda, por ahi baja el primer vecino del día"
       ]
     },
     {
       "id": "Lluvia",
       "texts": [
         "Uf otro dia más en la piscina.",
-	"Bueno ya quedan pocos días de verano y acabaré de trabajar.",
-	"Hoy el día está muy nublado espero que no llueva."
+        "Bueno ya quedan pocos días de verano y acabaré de trabajar.",
+        "Hoy el día está muy nublado espero que no llueva."
       ]
     },
     {
       "id": "PostLluvia",
       "texts": [
         "Que barbaridad la cantidad de agua que ha caído.",
-	"Menos mal que he cerrado la piscina a tiempo."
+        "Menos mal que he cerrado la piscina a tiempo."
       ]
     },
     {
@@ -183,8 +183,8 @@
       "texts": [
         "El nadador ha sufrido un paro cardiaco mientras nadaba.",
         "He conseguido sacarlo de la piscina, pero no tiene respiración y tampoco encuentro su pulso, debo realizarle la RCP.",
-	"La RCP es una técnica que se basa en una secuencia de 30:2.",
-	"Haz click cuando se te indique para realizar compresiones hasta llegar a 30."
+        "La RCP es una técnica que se basa en una secuencia de 30:2.",
+        "Haz click cuando se te indique para realizar compresiones hasta llegar a 30."
       ]
     },
     {
@@ -275,7 +275,22 @@
       "texts": [
         "¡Fallaste! No son las preguntas adecuadas para saber si una persona se encuentra en un buen estado mental tras un golpe de calor."
       ]
+    },
+    {
+      "id": "Despedido",
+      "texts": [
+        "Yo: Me ha llegado una carta de la empresa, no tiene buena pinta esto..."
+      ]
+    },
+    {
+      "id": "Carta despido",
+      "texts": [
+        "Carta: Hola, le escribimos para comunicarle la rescisión de su contrato con esta empresa",
+        "Carta: Nos han llegado multitud de quejas a nuestras oficinas y la verdad es que nos vemos francamente desconcertados.",
+        "Carta: [...]",
+        "Carta: Agradecemos el tiempo que ha trabajado con nosotros, un saludo.",
+        "Yo: ¿Estoy... despedido?"
+      ]
     }
-
   ]
 }
