@@ -1,8 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using System.Numerics;
-
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
